@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - This function uses if else to check whether the number is +ve, -ve or 0
+ * main - This function uses if else to check the number is +ve, -ve or 0
  *
- * Resturn: o (success)
+ * Return: 0 (success)
 */
 
 int main(void)
@@ -14,11 +14,14 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0) {
+	if (n > 0)
 		printf("%i is positive\n", n);
-	} else if (n < 0) {
+	else if (n < 0)
+	{
 		printf("%i is negative\n", n);
-	} else {
+	}
+	else
+	{
 		printf("%i is zero\n", n);
 	}
 	return (0);
