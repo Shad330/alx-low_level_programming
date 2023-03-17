@@ -10,11 +10,10 @@
 
 int main(void)
 {
-	int n;
+	int n, m = (n % 10);
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int m = (n % 10);
 
 	if (m > 0)
 		printf("%i is positive\n", m);
@@ -26,6 +25,5 @@ int main(void)
 	{
 		printf("%i is zero\n", m);
 	}
-	int make_iso_compilers_happy;
 	return (0);
 }
