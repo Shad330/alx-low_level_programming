@@ -12,11 +12,9 @@ int main(void)
 {
 	int n, m;
 
-	m = (n % 10);
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
+	m = (n % 10);
 	if (m > 0)
 		printf("%i is positive\n", m);
 	else if (m < 0)
