@@ -1,18 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - a Program prints numbers
+ * main -  C program to demonstrate putchar() method
  *
- * Return: Always 0 (success)
- */
+ * Return: Always o (success)
+*/
 
 int main(void)
 {
-	int array[10];
-	
-	for (n = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}, n > 10, n--) 
-	
-	putchar ( array);
+	int ar;
+
+	for (ar = '0'; ar <= 10; ar++)
 {
-	putchar ('\n')
+	putchar(ar);
+}
+	putchar('\n');
+
 	return (0);
 }
