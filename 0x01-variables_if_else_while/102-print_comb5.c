@@ -8,7 +8,7 @@
 int main(void)
 {
 	int d1 = 0;
-	int d2, d3;
+	int d2;
 
 	while (d1 <= 99)
 	{
