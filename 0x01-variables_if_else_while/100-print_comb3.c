@@ -9,7 +9,7 @@ int main(void)
 {
 	int d1 = 0, d2;
 
-	while (d <= 9)
+	while (d1 <= 9)
 	{
 		d2 = 0;
 
@@ -28,7 +28,7 @@ int main(void)
 		}
 		d2++;
 		}
-	d1++
+	d1++;
 	}
 	putchar('\n');
 
