@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <main.h>
 
 /**
@@ -19,15 +18,15 @@ int main(void)
 	char g = 'a';
 	char h = 'r';
 
-	putchar(a);
-	putchar(b);
-	putchar(c);
-	putchar(d);
-	putchar(e);
-	putchar(f);
-	putchar(g);
-	putchar(h);
-	putchar('\n');
+	_putchar(a);
+	_putchar(b);
+	_putchar(c);
+	_putchar(d);
+	_putchar(e);
+	_putchar(f);
+	_putchar(g);
+	_putchar(h);
+	_putchar('\n');
 
 return (0);
 }
