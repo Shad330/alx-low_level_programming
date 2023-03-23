@@ -9,7 +9,7 @@ int main(void)
 {
 	int digit;
 
-	for (digit = 0; digit <= 100; digit++)
+	for (digit = 1; digit <= 100; digit++)
 	{
 		if (digit % 3 == 0)
 			printf(" Fizz");
