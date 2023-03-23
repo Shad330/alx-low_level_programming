@@ -8,9 +8,14 @@
  *
  * @b: is an integer value
  *
+ * Return: multplicatiopn result
 */
 
 mul(int a, int b)
 {
-	multiplyNum(a, b);
+	int result;
+
+	result = multiplyNum(a, b);
+
+	return (result);
 }
