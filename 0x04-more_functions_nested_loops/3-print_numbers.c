@@ -2,6 +2,7 @@
 
 /**
  * print_numbers  - C program to demonstrate putchar() method
+ * Return: void
 */
 
 void print_numbers(void)
