@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * print_diagonal -  C program to demonstrate putchar() method
@@ -7,16 +7,15 @@
 
 void print_diagonal(int n)
 {
-	int pos, lent;
+	int postn, space;
 
 	if (n <= 0)
 		_putchar('\n');
-
 	else
 	{
-		for (pos = 1; pos <= n; pos++)
+		for (postn = 1; postn <= n; postn++)
 		{
-			for (lent = 1; lent <= pos; lent++)
+			for (space = 1; space <= postn; space++)
 				_putchar(' ');
 			_putchar(92);
 			_putchar('\n');
