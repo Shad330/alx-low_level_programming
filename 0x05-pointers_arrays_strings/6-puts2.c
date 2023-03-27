@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts2 - print a given string to screen
+ * puts2 - print a given string to screen
  *
  * @str: passed pointer argument for string
  * Return: void
