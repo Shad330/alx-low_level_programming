@@ -1,4 +1,4 @@
-#include"stdio.h"
+#include<stdio.h>
 
 /**
  *main - function that return the program name
@@ -7,7 +7,7 @@
  *Return: always 0
 */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
 
