@@ -1,26 +1,24 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * main - functions that multplies 2 numbers
+ * main - prints all arguments it receives
  *
- * @argc: command line count
- * @argv: array of strings
+ * @argc: argument count
+ * @argv: argument vector
  * Return: int
-*/
-
+ */
 int main(int argc, char *argv[])
 {
-	int total;
+	int m1, m2;
 
-	if (argc = 3)
-	{
-		total = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", total);
-	}
-	else
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	m1 = atoi(argv[1]);
+	m2 = atoi(argv[2]);
+	printf("%d\n", m1 * m2);
+	return (0);
 }
