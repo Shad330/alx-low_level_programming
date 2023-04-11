@@ -1,50 +1,43 @@
 #include "main.h"
 #include <stdlib.h>
-/**
-  *argstostr - concatenates all arguments of the program.
-  *@ac: argument count.
-  *@av: pointer to array of size ac.
-  *Return: NULL if ac == 0 or av == null, Pointer to new string.
-  *NULL on fail.
-  */
-char *argstostr(int ac, char **av)
-{
-	int i, j, k, size;
-	char *arg;
 
-	size = 0;
-	k = 0;
-	if (ac == 0 || av == NULL)
-		return (NULL);
-	i = 0;
-	while (i < ac)
-	{
-		j = 0;
-		while (av[i][j])
-		{
+/**
+ * str_concat - concatenates two strings
+ *
+ * @s1: string 1
+ * @s2: string 2
+ * Return: char pointer
+ */
+char *str_concat(char *s1, char *s2)
+{
+	unsigned int i = 0, j, size = 0;
+	char *str;
+
+	if (s1 != NULL)
+		for (i = 0; s1[i] != '\0'; i++)
 			size++;
-			j++;
-		}
-		size++;
-		i++;
-	}
-	arg = malloc((sizeof(char) * size) + 1);
-	if (arg == NULL)
+	if (s2 != NULL)
+		for (i = 0; s2[i] != '\0'; i++)
+			size++;
+	str = malloc(sizeof(char) * (size + 1));
+	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (i < ac)
+	if (s1 == NULL && s2 == NULL)
 	{
-		j = 0;
-		while (av[i][j])
-		{
-			arg[k] = av[i][j];
-			j++;
-			k++;
-		}
-		arg[k] = '\n';
-		k++;
-		i++;
+		str[0] = '\0';
+		return (str);
 	}
-	arg[k] = '\0';
-	return (arg);
+	if (s1 != NULL)
+		for (i = 0; s1[i] != '\0'; i++)
+			str[i] = s1[i];
+	if (s1 == NULL)
+		i = 0;
+	if (s2 != NULL)
+		for (j = 0; s2[j] != '\0'; j++)
+		{
+			str[i] = s2[j];
+			i++;
+		}
+	str[size] = '\0';
+	return (str);
 }
