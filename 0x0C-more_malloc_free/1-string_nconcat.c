@@ -33,10 +33,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		st[a] = s1[a];
 
 	for (b = 0; s2[b] != '\0'; b++)
-	{
+
 		st[b] = s2[b];
 		a++;
-	}
+
 	st[a] = '\0';
 	return (st);
 }
