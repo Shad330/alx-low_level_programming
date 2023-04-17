@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -80,6 +79,3 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->owner = new_owner;
 	return (new_dog);
 }
-=======
-
->>>>>>> 7231bcc08dec072260242ec612143bd441b8a5d7
