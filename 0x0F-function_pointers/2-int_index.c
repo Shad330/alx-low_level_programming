@@ -6,7 +6,7 @@
  * @size: the size of the array used
  * @cmp: a pointer to the cunction used
  *
- * Return: void
+ * Return:the integer index 
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -18,7 +18,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			if (cmp(array[i]))
 				return (i);
-				i++;
+			i++;
 		}
 	return (-1);
 }
